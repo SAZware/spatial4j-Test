@@ -1,10 +1,13 @@
-How to calculate distances?
+Output
 
-```Java
-Point berlin = ctx.getShapeFactory().pointLatLon(52.5200, 13.4050);
-Point hamburg = ctx.getShapeFactory().pointLatLon(53.511, 9.9937);
-double distanceDegree = ctx.getDistCalc().distance(berlin, hamburg);
-double distanceKm = distanceDegree * DEG_TO_KM;
+- Distance between Berlin and Hamburg is 2.2786604059068525 degree or 253.3758255223615km
+- Small circle DISJOINT Hamburg
+- Medium circle CONTAINS Hamburg
+- Large circle CONTAINS Hamburg
+- Polygon is a rectangle?: true
+- Polygon CONTAINS Berlin
+- Polygon DISJOINT Hamburg
+- Polygon is a rectangle?: false
+- Polygon CONTAINS Berlin
+- Polygon DISJOINT Hamburg
 ```
-
-For more information, see Brain.java ;).
